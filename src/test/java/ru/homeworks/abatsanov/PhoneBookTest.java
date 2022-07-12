@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class PhoneBookTest {
@@ -50,8 +49,6 @@ public class PhoneBookTest {
         list.add(contact);
         list2.add(contact2);
         list2.add(contact);
-        list.sort(Comparator.comparing(Contact::toString));
-        list2.sort(Comparator.comparing(Contact::toString));
         // when:
         expected.put("Футбол", list);
         expected.put("Работа", list2);
